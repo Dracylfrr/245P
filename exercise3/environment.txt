@@ -1,0 +1,17 @@
+Testing Environment
+-------------------
+Browser: Google Chrome 130.0.6723.91 (64-bit)
+Browser: Vivaldi 7.6 (64-bit)
+Operating System: Windows 11 Pro, Version 23H2
+Computer Architecture: x86-64 (Intel Core i7)
+
+Testing Process
+-------------------
+1. Opened index.html locally in Google Chrome and Vivaldi to check for cross-browser layout consistency.
+2. Resized window between 900px–1600px to verify responsive behavior of flexbox layout and image scaling.
+3. Validated HTML syntax via the W3C Markup Validation Service.
+4. Verified CSS with W3C CSS Validator to ensure compliance.
+5. Confirmed that all navigation links scroll correctly to their respective sections.
+6. Ensured that images load locally and have descriptive alt text.
+
+These tests confirm that the webpage is functional, accessible, and visually consistent across common browsers.

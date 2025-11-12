@@ -1,0 +1,133 @@
+/* ====== Base Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== Body & Typography ====== */
+body {
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  color: #1e1e1e;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+  background-image: linear-gradient(to bottom right, #0d47a1, #1976d2);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+header .tagline {
+  font-size: 1.1em;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* ====== Navigation ====== */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* ====== Sections ====== */
+main {
+  padding: 50px 10%;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #0d47a1;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #64b5f6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ====== Cards (Places Section) ====== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.cards article {
+  background-color: #e3f2fd;
+  border-left: 6px solid #1976d2;
+  border-radius: 6px;
+  flex: 1 1 30%;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cards article:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Gallery ====== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Travel Tips ====== */
+ul {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  background-color: #0d47a1;
+  color: #e3f2fd;
+  padding: 25px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
