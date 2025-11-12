@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6 - Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1 style="text-align:center;">Hypercar Picture Carousel</h1>
+
+    <div class="carousel">
+      <div class="slide__container">
+        <!-- copy of last image -->
+        <img src="ko.jpg" id="lastClone" alt="Koenigsegg" />
+
+        <!-- main slides -->
+        <img src="Ferrari.jpg" alt="Ferrari" />
+        <img src="bu.jpg" alt="Bugatti" />
+        <img src="mc.jpg" alt="McLaren" />
+        <img src="Lam.jpg" alt="Lamborghini" />
+        <img src="ko.jpg" alt="Koenigsegg" />
+
+        <!-- copy of first image -->
+        <img src="Ferrari.jpg" id="firstClone" alt="Ferrari" />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="prevButton">prev</button>
+      <button id="nextButton">next</button>
+    </div>
+  </body>
+</html>

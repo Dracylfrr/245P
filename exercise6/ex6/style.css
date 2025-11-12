@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 40px;
+  text-align: center;
+}
+
+.carousel {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide__container {
+  display: inline-flex;
+  white-space: nowrap;
+  position: relative;
+  height: 300px;
+}
+
+img {
+  object-fit: cover;
+  width: 800px;
+  height: 560px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
