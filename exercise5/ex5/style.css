@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 600px;
+}
+
+/* Tabs container */
+.tabs {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #444;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Sidebar */
+.tabs__sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  padding-right: 20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 519px;
+}
+
+/* Buttons */
+.tabs__button {
+  display: block;
+  border: 1px solid black;
+  margin-right: 20px;
+  width: 100%;
+  background: #cfcfcf;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  height: 33%;
+  margin-bottom: 20px;
+}
+
+.tabs__button:hover {
+  background: #bbb;
+}
+
+/* Active button */
+.tabs__button--active {
+  background-color: #ff5555;
+  color: white;
+  font-weight: bold;
+}
+
+/* Content area */
+.tabs__content {
+  display: none;
+  padding: 20px;
+  width: 100%;
+  background: white;
+}
+
+.tabs__content--active {
+  display: block;
+  background: #e3ffe3;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}

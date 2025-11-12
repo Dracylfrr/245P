@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 5 - Tabulated Box</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 style="text-align:center;">🎮 Nintendo 3DS Hub</h1>
+
+  <div class="tabs">
+    <div class="tabs__sidebar">
+      <button class="tabs__button tabs__button--active" data-for-tab="1">Tab 1 - Overview</button>
+      <button class="tabs__button" data-for-tab="2">Tab 2 - Games</button>
+      <button class="tabs__button" data-for-tab="3">Tab 3 - Legacy</button>
+    </div>
+
+    <div class="tabs__content tabs__content--active" data-tab="1">
+      <h2>About the Nintendo 3DS</h2>
+      <p>
+        Released in 2011, the <strong>Nintendo 3DS</strong> introduced glasses-free 3D gaming 
+        and dual screens that redefined handheld gaming. It featured backward compatibility 
+        with DS titles, online multiplayer, and the iconic StreetPass feature.
+      </p>
+      <p>
+        The 3DS lineup included the 3DS XL, New 3DS, and 2DS — each offering unique designs 
+        and performance improvements.
+      </p>
+    </div>
+
+    <div class="tabs__content" data-tab="2">
+      <h2>Popular 3DS Games</h2>
+      <ul>
+        <li><strong>Pokémon X & Y</strong> — The first fully 3D Pokémon adventure.</li>
+        <li><strong>The Legend of Zelda: Ocarina of Time 3D</strong> — A beautifully remade classic.</li>
+        <li><strong>Animal Crossing: New Leaf</strong> — Relaxing life simulation fun.</li>
+        <li><strong>Mario Kart 7</strong> — Classic racing with new gliders and underwater tracks.</li>
+      </ul>
+    </div>
+
+    <div class="tabs__content" data-tab="3">
+      <h2>The Legacy of the 3DS</h2>
+      <p>
+        The Nintendo 3DS sold over 75 million units worldwide before being discontinued in 2020.
+        Its library remains beloved, with strong communities still trading Pokémon and replaying 
+        their favorite titles.
+      </p>
+      <p>
+        While the Nintendo Switch took the spotlight, the 3DS is still remembered as one of the most 
+        innovative handheld consoles ever created.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
