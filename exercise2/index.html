@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 2: HTML & CSS - Box Positioning</title>
+    <style>
+      /* Base styles — do not modify */
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin: 0;
+        background-color: #f1f1f1;
+      }
+
+      /* Wrapper flex container */
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+      }
+
+      /* === GREEN SECTION === */
+      .left {
+        width: 45%;
+        height: 350px;
+        background: green;
+        display: flex;
+        justify-content: flex-end; /* move inner box to right */
+        align-items: flex-end; /* move inner box to bottom */
+        padding: 0px;
+      }
+
+      .left .inner {
+        border: 2px solid yellow;
+        color: yellow;
+        text-align: right; /* text aligned to right */
+        width: 300px;
+        height: 100px;
+        padding: 0px;
+        font-size: 12px;
+      }
+
+      /* === YELLOW SECTION === */
+      .right {
+        width: 45%;
+        height: 500px;
+        background: yellow;
+        display: flex;
+        justify-content: flex-start; /* move inner box to left */
+        align-items: flex-start; /* move inner box to top */
+        padding: 0px;
+      }
+
+      .right .inner {
+        border: 2px solid green;
+        color: purple; /* text color changed to purple */
+        text-align: left; /* text aligned left */
+        width: 300px;
+        height: 100px;
+        padding: 0px;
+        font-size: 12px;
+      }
+
+      /* === RED SECTIONS === */
+      .center {
+        flex: 1 1 40%;     /* 2 boxes + 40px gap → subtract half the gap */
+        height: 250px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        }
+
+        /* parent of the two red boxes */
+      .wrapper.red-row {
+        display: flex;
+        justify-content: space-between; /* optional with gap */
+        align-items: stretch;
+        gap: 180px;                      /* space BETWEEN the red boxes */
+        padding: 40px;
+        }
+
+
+
+
+      .center .inner {
+        border: 2px solid blue;
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+      }
+
+      /* === Layout tweaks for responsiveness === */
+      @media (max-width: 900px) {
+        .wrapper {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .left,
+        .right,
+        .center {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top green/yellow section -->
+    <div class="wrapper">
+      <div class="left">
+        <div class="inner">
+          The text in the yellow bordered div should be aligned to the right and
+          bottom of the div. The yellow bordered div should also be aligned to
+          the bottom right corner of the blue background div.
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="inner">
+          The text in this green bordered div should be organized to the top
+          right corner, but should be aligned to the left. Also, the text color
+          should be changed from green to purple.
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom red sections -->
+    <div class="wrapper red-row">
+      <div class="center">
+        <div class="inner">
+          The blue bordered div (that contains this text) should be centered
+          horizontally and vertically within the container div. Also, the text
+          itself should be aligned to the center as well as organized to the
+          center horizontally and vertically as well. The two red boxes should
+          be positioned next to each other in one row!
+        </div>
+      </div>
+
+      <div class="center">
+        <div class="inner">
+          The blue bordered div (that contains this text) should be centered
+          horizontally and vertically within the container div. Also, the text
+          itself should be aligned to the center as well as organized to the
+          center horizontally and vertically as well. The two red boxes should
+          be positioned next to each other in one row!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
