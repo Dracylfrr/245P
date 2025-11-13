@@ -1,0 +1,37 @@
+/* Main.css */
+
+.main {
+  margin-left: 260px;
+  padding: 40px 60px;
+  background-color: #f5f8fa;
+  min-height: calc(100vh - 70px);
+  max-width: 1450px;
+  text-align: left;
+}
+
+/* Headings inside Main content */
+.main h1 {
+  color: #0064a4;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.main h2 {
+  color: #003b63;
+  margin-top: 25px;
+  border-left: 5px solid #ffd200;
+  padding-left: 10px;
+}
+
+/* General text */
+.main p,
+.main ul {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Project list styling */
+.main ul li {
+  margin-bottom: 8px;
+}
